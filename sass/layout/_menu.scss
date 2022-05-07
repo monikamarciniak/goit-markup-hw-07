@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.nav__list-item {
+.nav__item {
     padding-right: 46px;
 
     &:active {
@@ -33,7 +33,7 @@
     padding-left: auto;
 }
 
-.nav__list-link,
+.nav__link,
 .contact__mail,
 .contact__phone-number {
     font-size: 14px;
@@ -45,11 +45,11 @@
     padding-top: 32px;
 }
 
-.nav__list-link {
+.nav__link {
     color: var(--main-color);
 }
 
-.current .nav__list-link::after {
+.current .nav__link::after {
     position: relative;
     top: 38px;
     display: block;
@@ -70,7 +70,7 @@
     padding-right: 30px;
 }
 
-.nav__list-link,
+.nav__link,
 .contact__mail,
 .contact__phone-number,
 .contact__logo {
@@ -78,8 +78,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__list-link:hover,
-.nav__list-link:focus,
+.nav__link:hover,
+.nav__link:focus,
 .contact__mail:hover,
 .contact__mail:hover + .contact__logo,
 .contact__mail:focus,

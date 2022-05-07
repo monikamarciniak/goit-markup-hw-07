@@ -1,4 +1,4 @@
-.visually__hidden {
+.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -69,7 +69,7 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo__header {
+.logo-header {
   font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
@@ -83,11 +83,11 @@ img {
   margin-right: 93px;
 }
 
-.logo__header--color {
+.logo-header--color {
   color: var(--hover-color);
 }
 
-.logo__footer {
+.logo-footer {
   font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
@@ -101,7 +101,7 @@ img {
   padding-top: 60px;
 }
 
-.logo__footer--color {
+.logo-footer--color {
   color: var(--hover-color);
 }
 
@@ -134,7 +134,7 @@ img {
   border-radius: 4px;
 }
 
-.closebtn {
+.close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -257,7 +257,7 @@ label {
   cursor: pointer;
 }
 
-.is__hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -277,19 +277,19 @@ label {
   align-items: center;
 }
 
-.nav__list-item {
+.nav__item {
   padding-right: 46px;
 }
 
-.nav__list-item:active {
+.nav__item:active {
   color: var(--hover-color);
 }
 
-.nav__list-item {
+.nav__item {
   padding-right: 46px;
 }
 
-.nav__list-item:last-child {
+.nav__item:last-child {
   padding-right: 360px;
 }
 
@@ -297,7 +297,7 @@ label {
   padding-left: auto;
 }
 
-.nav__list-link,
+.nav__link,
 .contact__mail,
 .contact__phone-number {
   font-size: 14px;
@@ -309,11 +309,11 @@ label {
   padding-top: 32px;
 }
 
-.nav__list-link {
+.nav__link {
   color: var(--main-color);
 }
 
-.current .nav__list-link::after {
+.current .nav__link::after {
   position: relative;
   top: 38px;
   display: block;
@@ -334,7 +334,7 @@ label {
   padding-right: 30px;
 }
 
-.nav__list-link,
+.nav__link,
 .contact__mail,
 .contact__phone-number,
 .contact__logo {
@@ -342,8 +342,8 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__list-link:hover,
-.nav__list-link:focus,
+.nav__link:hover,
+.nav__link:focus,
 .contact__mail:hover,
 .contact__mail:hover + .contact__logo,
 .contact__mail:focus,
@@ -472,7 +472,6 @@ label {
 
 .label {
   display: block;
-  position: absolute;
   top: 215px;
   height: 70px;
   width: 360px;
@@ -610,27 +609,35 @@ label {
   margin-bottom: 94px;
 }
 
-.clients__list-item {
+.clients__item {
   position: relative;
   padding: 16px 32px;
 }
 
-.client__list-link {
+.client__link {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid var(--icon-color);
+  border: 2px solid var(--icon-color);
   width: 170px;
   height: 92px;
   margin-right: 30px;
 }
 
-.client__list-link:hover,
-.client__list-link:hover .clients__icon,
-.client__list-link:focus .clients__icon:hover,
+.client__link:hover,
+.client__link:hover .clients__icon,
+.client__link:focus .clients__icon:hover,
+.client__link .clients__icon:focus {
+  border-color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+.client__link:hover,
+.client__link:hover .clients__icon,
+.client__link:focus .clients__icon:hover,
 .clients__icon:focus {
   border-color: var(--hover-color);
   fill: var(--hover-color);
@@ -793,11 +800,11 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 94px;
+  margin-top: 34px;
   margin-bottom: 34px;
 }
 
-.portfolio__project-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   height: 1360px;
@@ -833,7 +840,7 @@ label {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.portfolio__project-card {
+.portfolio__card {
   border: 1px solid #EEEEEE;
   height: 404px;
   width: 370px;
@@ -843,12 +850,12 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__project-card:hover, .portfolio__project-card:focus {
+.portfolio__card:hover, .portfolio__card:focus {
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
 }
 
-.portfolio__project-photo {
+.portfolio__photo {
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
@@ -881,12 +888,12 @@ label {
   margin: 0 auto;
 }
 
-.portfolio__project-item:hover .overlay__description {
+.portfolio__item:hover .overlay__description {
   transform: translateY(0);
   background-color: var(--hover-color);
 }
 
-.portfolio__project-title {
+.portfolio__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -897,7 +904,7 @@ label {
   padding-left: 24px;
 }
 
-.portfolio__project-subtitle {
+.portfolio__subtitle {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.667;
@@ -907,7 +914,7 @@ label {
   padding-left: 24px;
 }
 
-.portfolio__project-item {
+.portfolio__item {
   display: flex;
   flex-direction: column;
 }
