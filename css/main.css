@@ -662,7 +662,9 @@ label {
 }
 
 .address {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  padding-right: 60px;
 }
 
 .contact {
@@ -698,8 +700,9 @@ label {
 }
 
 .social {
-  display: inline-block;
-  width: 206px;
+  display: inline-flex;
+  flex-flow: column;
+  width: 291px;
   height: 80px;
 }
 
@@ -715,8 +718,6 @@ label {
 
 .footer__social-links-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer__social-links-item {
@@ -744,9 +745,14 @@ label {
   height: 20px;
 }
 
-.footer__newsletter {
+.footer__form {
+  display: inline-flex;
   width: 370px;
-  display: inline-block;
+}
+
+.footer__newsletter {
+  width: 566px;
+  display: inline-flex;
 }
 
 .footer__newsletter-title {
@@ -777,13 +783,14 @@ label {
 
 .footer__newsletter-btn {
   display: flex;
+  align-items: center;
   width: 200px;
   height: 50px;
   background-color: var(--hover-color);
   color: var(--third-color);
-  text-align: start;
   padding: 12px 30px 10px 42px;
   cursor: pointer;
+  margin-top: 36px;
 }
 
 .footer__newsletter-btn:hover, .footer__newsletter-btn:focus {
